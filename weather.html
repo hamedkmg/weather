@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <title>Weather Project</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/fontawesome/svgs/solid/calendar-minus.svg" style="color: #f0f8ff;" alt="" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Booking something
+            </a>
+            <div class="nav">
+                <a class="nav-link active link-light" aria-current="page" href="#">Home</a>
+                <a class="nav-link link-light" href="#">Features</a>
+                <a class="nav-link link-light" href="/weather.html">Weather</a>
+                <a class="nav-link disabled link-light" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <main class="pt-2">
+        <h2 class="m-3">Cities Weather</h2>
+        <div class="container">
+
+            <div class="mb-2">
+                <div class="mb-3">
+                    <input class="form-control" type="file" id="fileInput">
+                    <button class="btn btn-primary btn-lg" id="readCSVBtn">Read csv</button>
+                </div>
+            </div>
+            <!-- Select list -->
+            <div class="d-flex mb-3">
+                <select class="form-select form-select-lg text-capitalize" name="citiesList" id="citiesList">
+                    <Option selected>Choose a city</Option>
+                </select>
+                <!-- OK Button to retrieve that data -->
+                <button class="btn btn-primary btn-lg" id="submitBtn">OK</button>
+            </div>
+            <h2 class="text-capitalize" id="cityHeading">Choose a city</h2>
+            <!-- Table to view the data -->
+            <table id="weatherTable" class="table table-hover">
+                <thead>
+                    <th>
+                        Date
+                    </th>
+                    <td>
+                        Weather
+                    </td>
+                    <td>
+                        Temp(Min/Max)
+                    </td>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
